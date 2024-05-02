@@ -12,6 +12,8 @@
     <view class="text-center m-4">svg 多种使用方法</view>
     <image src="/static/svg/task.svg" mode="scaleToFill" class="h-20 w-20" />
     <image :src="iconUrl" mode="scaleToFill" class="h-20 w-20" />
+    <image :src="iconUrl2" mode="scaleToFill" class="h-20 w-20" />
+    <!-- {{ iconRaw }} -->
     <view class="text-center m-4 text-blue-500">目前发现，小程序和APP只支持 image 方式</view>
     <view class="text-center m-4 text-blue-500">下面的几种方式，都不支持</view>
     <!-- #ifdef H5 -->
@@ -24,7 +26,11 @@
 
 <script lang="ts" setup>
 // eslint-disable-next-line import/no-duplicates
-import iconUrl from './task.svg?url'
+import iconUrl from './task.svg'
+// eslint-disable-next-line import/no-duplicates
+import iconUrl2 from './task.svg?url'
+// eslint-disable-next-line import/no-duplicates
+import iconRaw from './task.svg?raw'
 // #ifdef H5
 // 小程序不支持 component 方式引入，运行会报错，APP不报错，但是不生效
 // eslint-disable-next-line import/no-duplicates
