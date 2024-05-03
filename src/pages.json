@@ -232,6 +232,22 @@
       }
     },
     {
+      "path": "pages/demo/base/upload",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "上传"
+      }
+    },
+    {
+      "path": "pages/demo/base/upload2",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "上传+请求状态"
+      }
+    },
+    {
       "path": "pages/demo/base/uv-ui",
       "type": "page",
       "style": {
