@@ -2,7 +2,7 @@
 {
   layout: 'default',
   style: {
-    navigationBarTitleText: '上传',
+    navigationBarTitleText: '上传+请求状态',
   },
 }
 </route>

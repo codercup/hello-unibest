@@ -58,26 +58,11 @@
       }
     },
     {
-      "path": "pages/index/about",
-      "type": "page",
-      "style": {
-        "navigationBarTitleText": "关于"
-      }
-    },
-    {
       "path": "pages/index/request",
       "type": "page",
       "layout": "demo",
       "style": {
         "navigationBarTitleText": "请求"
-      }
-    },
-    {
-      "path": "pages/index/upload2",
-      "type": "page",
-      "layout": "default",
-      "style": {
-        "navigationBarTitleText": "上传"
       }
     },
     {
@@ -244,6 +229,14 @@
       "layout": "default",
       "style": {
         "navigationBarTitleText": "上传"
+      }
+    },
+    {
+      "path": "pages/demo/base/upload2",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "上传+请求状态"
       }
     },
     {
