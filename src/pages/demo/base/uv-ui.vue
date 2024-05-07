@@ -27,10 +27,20 @@
 
       <uv-icon :name="iconName"></uv-icon>
     </view>
+    <view class="m-4">
+      <view>富文本也是支持的：</view>
+      <uv-parse :content="content"></uv-parse>
+    </view>
   </view>
 </template>
 
 <script lang="ts" setup>
+const content = `<div>
+					<p style="color:red;" >露从今夜白，月是故乡明</p>
+					<img src="https://cdn.uviewui.com/uview/swiper/2.jpg" />
+          </div>
+				`
+
 console.log(uni.$uv.os())
 console.log(uni.$uv.sys())
 console.log(uni.$uv.trim(' abc ')) // 去除两端空格
