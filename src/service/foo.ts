@@ -30,3 +30,12 @@ export const fileUpload = (data: IUniUploadFileOptions) => {
     ...data,
   })
 }
+
+/** get 请求列表 */
+export const getList = (page = 1, pageSize = 10) => {
+  return http<any>({
+    url: `/queryList`,
+    method: 'GET',
+    query: { page, pageSize },
+  })
+}
