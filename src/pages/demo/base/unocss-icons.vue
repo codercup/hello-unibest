@@ -23,18 +23,22 @@
     <view class="ml-2"></view>
     <view :class="iconName" />
     <view :class="iconName2" />
-    <view>经过测试，动态图片只在同一个文件里面生效，从别的文件导入的不生效</view>
+    <view :class="iconName3" />
+    <view>经过测试，动态图片从别的文件导入也生效</view>
   </view>
 </template>
 
 <script lang="ts" setup>
 import { icon } from './unocss-icon'
+import { icon as icon2 } from './unocss-icon.json'
 const iconName = ref<string>('i-carbon-car')
 const iconName2 = ref<string>('i-carbon-car')
+const iconName3 = ref<string>('i-carbon-car')
 onLoad(() => {
   setTimeout(() => {
     iconName.value = 'i-carbon-user-avatar'
-    iconName.value = icon
+    iconName2.value = icon
+    iconName3.value = icon2
   }, 1000)
 })
 </script>
