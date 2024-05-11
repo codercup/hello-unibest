@@ -43,16 +43,25 @@
         <wd-button>点击展示</wd-button>
       </wd-popover>
     </view>
+    <view class="mt-4">
+      <wd-button @click="showModal">点击显示弹窗</wd-button>
+    </view>
   </view>
 </template>
 
 <script lang="ts" setup>
-import { useQueue } from 'wot-design-uni'
+import { useQueue, useMessage } from 'wot-design-uni'
 
 const { closeOutside } = useQueue()
+const message = useMessage()
 const show = ref<boolean>(false)
 function handleChange({ show }) {
   console.log(show)
+}
+
+const showModal = () => {
+  // 顺便测试 message 的使用
+  message.show('显示隐藏切换')
 }
 const value = ref<boolean>(false)
 
