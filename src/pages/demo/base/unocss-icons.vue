@@ -43,8 +43,8 @@
 import { icon, nest } from './unocss-icon'
 import { icon2, nest2 } from './unocss-icon.json'
 
-// 只需要把外面的在这里写一遍就能生效了！
-const iconList = ['i-carbon-3d-cursor-alt']
+// 只需要把外面的在这里写一遍就能生效了！注释掉也是生效的，但是必须要有
+// 'i-carbon-3d-cursor-alt'
 const iconName = ref<string>('i-carbon-car')
 const iconName2 = ref<string>('i-carbon-car')
 const iconName3 = ref<string>('i-carbon-car')
