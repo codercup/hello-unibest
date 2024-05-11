@@ -1,6 +1,6 @@
 export const icon = 'i-carbon-user-avatar'
 export const nest = {
   nest: {
-    icon: 'i-carbon-user-avatar',
+    icon: 'i-carbon-car',
   },
 }

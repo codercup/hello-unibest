@@ -25,7 +25,7 @@
     <view :class="iconName2" />
     <view :class="iconName3" />
     <view>经过测试，动态图片从别的文件导入也生效</view>
-    <view>但是必须是在顶层才生效，嵌套的不生效</view>
+    <view>顶层和嵌套的 都生效</view>
   </view>
 </template>
 
@@ -42,6 +42,7 @@ onLoad(() => {
     iconName3.value = icon2
   }, 1000)
   setTimeout(() => {
+    console.log(nest.nest.icon, nest2.nest2.icon)
     iconName2.value = nest.nest.icon
     iconName3.value = nest2.nest2.icon
   }, 2000)
