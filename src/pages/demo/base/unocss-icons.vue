@@ -24,10 +24,7 @@
     <view :class="iconName" />
     <view :class="iconName2" />
     <view :class="iconName3" />
-    <view>经过测试，动态图片从别的文件导入也生效</view>
-    <view>顶层和嵌套的 都生效</view>
-
-    <view mt-2>tabbar 的动态 unocss 图标也生效</view>
+    <view class="my-4 text-red">经过测试，动态图片从别的文件导入无法生效</view>
     <wd-tabbar-item title="首页" icon="home"></wd-tabbar-item>
     <wd-tabbar-item :value="2" icon="cart" title="分类">
       <template #icon>
@@ -51,7 +48,7 @@ const iconName2 = ref<string>('i-carbon-car')
 const iconName3 = ref<string>('i-carbon-car')
 onLoad(() => {
   setTimeout(() => {
-    iconName.value = 'i-carbon-user-avatar'
+    iconName.value = 'i-carbon-4k'
     iconName2.value = icon
     iconName3.value = icon2
   }, 1000)
