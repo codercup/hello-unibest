@@ -43,8 +43,9 @@
         <wd-button>点击展示</wd-button>
       </wd-popover>
     </view>
-
-    <wd-button @click="showModal">点击展示</wd-button>
+    <view class="mt-4">
+      <wd-button @click="showModal">点击显示弹窗</wd-button>
+    </view>
   </view>
 </template>
 
