@@ -108,21 +108,39 @@
 - node>=18
 - pnpm>=7.30
 
-## &#x1F4C2; 安装
+## &#x1F4C2; 快速开始
 
-执行 `pnpm i` 安装依赖
+### 创建项目
 
-## 📦 运行（支持热更新）
+```bash
+pnpm create unibest my-project
+```
 
-- web平台： `pnpm dev:h5`, 然后打开 [http://localhost:9000/](http://localhost:9000/)。
-- weixin平台：`pnpm dev:mp-weixin` 然后打开微信开发者工具，导入本地文件夹，选择本项目的`dist/dev/mp-weixin` 文件。
-- APP平台：`pnpm dev:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/dev/app` 文件夹，选择运行到模拟器(开发时优先使用)，或者运行的安卓/ios基座。
+### 安装、运行
 
-## 🔗 发布
+```bash [pnpm]
+pnpm i
+pnpm dev
+# dev默认运行的是h5，其他平台执行dev:<uni-platform>，如:
+pnpm dev:mp-weixin
+```
 
-- web平台： `pnpm build:h5`，打包后的文件在 `dist/build/h5`，可以放到web服务器，如nginx运行。如果最终不是放在根目录，可以在 `manifest.config.ts` 文件的 `h5.router.base` 属性进行修改。
-- weixin平台：`pnpm build:mp-weixin`, 打包后的文件在 `dist/build/mp-weixin`，然后通过微信开发者工具导入，并点击右上角的“上传”按钮进行上传。
-- APP平台：`pnpm build:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/build/app` 文件夹，选择发行 - APP云打包。
+`pnpm dev` 之后在浏览器打开 `http://localhost:9000/`。
+
+> 更多模板请看官方文档[unibest](https://codercup.github.io/unibest/)。
+
+### 第一次 `commit`
+
+```bash
+git add .
+git commit -m "feat: init project"
+```
+
+### `v3` 代码块
+
+在 `vue` 文件中，输入 `v3` 按 `tab` 即可快速生成页面模板，可以大大加快页面生成。
+
+> 原理：基于 `VSCode` 代码块生成。
 
 ## 📄 License
 
@@ -153,14 +171,4 @@ Copyright (c) 2024 菲鸽
 <p align='center'>
 <img alt="special sponsor appwrite" src="./screenshots/pay-wx-2.png" width="300" style="margin-left:0px;">
 <img alt="special sponsor appwrite" src="./screenshots/pay-wx.png" width="300" style="margin-left:2px;">
-</p>
-
-## 🤝 微信交流群
-
-扫码进微信群，微信群7天过期，作者会定期维护，争取读者每次打开都是可用的。
-
-①②③群已满，下面是④群：
-
-<p align='center'>
-<img alt="special sponsor appwrite" src="https://oss.laf.run/ukw0y1-site/wx-group.jpg" width="300" style="margin-left:0px;">
 </p>
