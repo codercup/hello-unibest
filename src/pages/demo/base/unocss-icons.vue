@@ -25,12 +25,13 @@
     <view :class="iconName2" />
     <view :class="iconName3" />
     <view>经过测试，动态图片从别的文件导入也生效</view>
+    <view>但是必须是在顶层才生效，嵌套的不生效</view>
   </view>
 </template>
 
 <script lang="ts" setup>
-import { icon } from './unocss-icon'
-import { icon as icon2 } from './unocss-icon.json'
+import { icon, nest } from './unocss-icon'
+import { icon2, nest2 } from './unocss-icon.json'
 const iconName = ref<string>('i-carbon-car')
 const iconName2 = ref<string>('i-carbon-car')
 const iconName3 = ref<string>('i-carbon-car')
@@ -40,5 +41,9 @@ onLoad(() => {
     iconName2.value = icon
     iconName3.value = icon2
   }, 1000)
+  setTimeout(() => {
+    iconName2.value = nest.nest.icon
+    iconName3.value = nest2.nest2.icon
+  }, 2000)
 })
 </script>
