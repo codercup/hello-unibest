@@ -127,7 +127,7 @@ pnpm dev:mp-weixin
 
 `pnpm dev` 之后在浏览器打开 `http://localhost:9000/`。
 
-> 更多模板请看官方文档[unibest](https://codercup.github.io/unibest/)。
+> 更多模板请看官方文档[unibest](https://codercup.github.io/unibest-docs/)。
 
 ### 第一次 `commit`
 
