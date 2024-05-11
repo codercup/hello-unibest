@@ -20,15 +20,21 @@
     <view class="h-10"></view>
     <view class="i-carbon-user-avatar text-red" />
     <view :class="`i-carbon-user-avatar`" />
+    <view class="ml-2"></view>
     <view :class="iconName" />
+    <view :class="iconName2" />
+    <view>经过测试，动态图片只在同一个文件里面生效，从别的文件导入的不生效</view>
   </view>
 </template>
 
 <script lang="ts" setup>
+import { icon } from './unocss-icon'
 const iconName = ref<string>('i-carbon-car')
+const iconName2 = ref<string>('i-carbon-car')
 onLoad(() => {
   setTimeout(() => {
     iconName.value = 'i-carbon-user-avatar'
+    iconName.value = icon
   }, 1000)
 })
 </script>
