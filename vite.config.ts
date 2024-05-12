@@ -53,6 +53,7 @@ export default ({ command, mode }) => {
 
     plugins: [
       UniPages({
+        dts: 'src/types/uni-pages.d.ts',
         exclude: ['**/components/**/**.*'],
         routeBlockLang: 'json5', // 虽然设了默认值，但是vue文件还是要加上 lang="json5", 这样才能很好地格式化
         homePage: 'pages/index/index',
@@ -62,7 +63,9 @@ export default ({ command, mode }) => {
       UniPlatform(),
       UniManifest(),
       // 自动安装 src/components 里面的组件为全局组件，非全局组件不要放到 src/components
-      Components(),
+      Components({
+        dts: 'src/types/components.d.ts',
+      }),
       // UniXXX 需要在 Uni 之前引入
       Uni(),
       UnoCSS(),
@@ -79,7 +82,7 @@ export default ({ command, mode }) => {
       vueSetupExtend(),
       AutoImport({
         imports: ['vue', 'uni-app'],
-        dts: 'src/auto-import.d.ts',
+        dts: 'src/types/auto-import.d.ts',
         dirs: ['src/hooks'], // 自动导入 hooks
         eslintrc: { enabled: false },
         vueTemplate: true, // default false
