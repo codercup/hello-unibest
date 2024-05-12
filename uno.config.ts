@@ -59,7 +59,10 @@ export default defineConfig({
    * 自定义快捷语句
    * @see https://github.com/unocss/unocss#shortcuts
    */
-  shortcuts: [['center', 'flex justify-center items-center']],
+  shortcuts: [
+    ['center', 'flex justify-center items-center'],
+    ['text-primary', 'text-yellow'],
+  ],
   transformers: [
     ...transformers,
     // 启用 @apply 功能
