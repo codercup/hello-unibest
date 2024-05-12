@@ -5,7 +5,7 @@
 </route>
 
 <template>
-  <view class="bg-slate-100 min-h-full box-border pb-3">
+  <view class="bg-slate-100 min-h-full box-border pb-1">
     <view class="tab-container sticky top-0 bg-white px-4 center h-12 z-1">
       <view
         class="w-full text-center h-10 leading-10 rounded-md"
