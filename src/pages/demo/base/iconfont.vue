@@ -8,11 +8,11 @@
 </route>
 
 <template>
-  <view class="">
-    iconfont
-    <i class="iconfont icon-package text-red"></i>
-    <i class="iconfont icon-chat text-red"></i>
-    <i class="iconfont icon-my text-red"></i>
+  <view class="m-4">
+    <text mr-2>iconfont:</text>
+    <i class="iconfont icon-package text-primary"></i>
+    <i class="iconfont icon-chat text-primary"></i>
+    <i class="iconfont icon-my text-primary"></i>
   </view>
 </template>
 
