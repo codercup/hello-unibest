@@ -44,7 +44,8 @@ interface NavigateToOptions {
        "/pages/demo/page/img-min/index" |
        "/pages/demo/page/lottery/big-wheel" |
        "/pages/demo/page/lottery/nine-grid" |
-       "/pages/demo/page/z-paging/index";
+       "/pages/demo/page/z-paging/index" |
+       "/pages-sub/demo/index";
 }
 interface RedirectToOptions extends NavigateToOptions {}
 
