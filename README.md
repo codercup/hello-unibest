@@ -33,8 +33,6 @@
   <a href="https://codercup.github.io/unibest-docs/" target="_blank">📖 文档地址</a>
 </p>
 
-<<<<<<< HEAD
-
 ## ✨ 特性
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
@@ -72,42 +70,6 @@
 - [x] 路由拦截
 - [x] 大转盘抽奖
 - [x] 九宫格抽奖
-- [ ] 仿`BOSS直聘`个人中心
-- [ ] 仿华为商城个人中心
-- [ ] 仿网易云音乐 APP（独立项目）
-<p align="center">
-<a href="https://cn.vuejs.org/" target="_blank">
-      <img src="https://img.shields.io/badge/-Vue3-34495e?logo=vue.js" />
-  </a>
-  <a href="https://cn.vitejs.dev/" target="_blank">
-      <img src="https://img.shields.io/badge/-Vite4-646cff?logo=vite&logoColor=white" />
-  </a>
-  <a href="https://www.typescriptlang.org/zh/" target="_blank">
-      <img src="https://img.shields.io/badge/-TypeScript5-blue?logo=typescript&logoColor=white" />
-  </a>
-  <a href="https://eslint.org/" target="_blank">
-      <img src="https://img.shields.io/badge/-ESLint8-4b32c3?logo=eslint&logoColor=white" />
-  </a>
-  <a href="https://stylelint.io/" target="_blank">
-      <img src="https://img.shields.io/badge/-StyleLint16-4b32c3?logo=stylelint&logoColor=white" />
-  </a>
-  <a href="https://pnpm.io/" target="_blank">
-      <img src="https://img.shields.io/badge/-pnpm8-F69220?logo=pnpm&logoColor=white" />
-  </a>
-  <a href="https://unocss.dev/" target="_blank">
-      <img src="https://img.shields.io/badge/-UnoCSS-4d4d4d?logo=unocss" />
-  </a>
-  <a href="https://icones.js.org/" target="_blank">
-      <img src="https://img.shields.io/badge/-icones-1769aa?logo=Iconify" />
-  </a>
-  <a href="https://ext.dcloud.net.cn/plugin?id=8559" target="_blank">
-      <img src="https://svg.hamm.cn/badge.svg?key=Platform&value=uni-app"/>
-  </a>
-  </p>
-
-=======
-
-> > > > > > > demo
 
 ## ⚙️ 环境
 
@@ -116,31 +78,13 @@
 
 ## &#x1F4C2; 快速开始
 
-# <<<<<<< HEAD
-
-执行 `pnpm create unibest` 创建项目
-
-> > > > > > > demo
-
 ### 创建项目
-
-<<<<<<< HEAD
 
 ```bash
 pnpm create unibest my-project
 ```
 
 ### 安装、运行
-
-=======
-执行 `pnpm dev` 运行 `H5`
-
-## 📦 运行（支持热更新）
-
-- web 平台： `pnpm dev:h5`, 然后打开 [http://localhost:9000/](http://localhost:9000/)。
-- weixin 平台：`pnpm dev:mp-weixin` 然后打开微信开发者工具，导入本地文件夹，选择本项目的`dist/dev/mp-weixin` 文件。
-- APP 平台：`pnpm dev:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/dev/app` 文件夹，选择运行到模拟器(开发时优先使用)，或者运行的安卓/ios 基座。
-  > > > > > > > demo
 
 ```bash [pnpm]
 pnpm i
@@ -149,9 +93,22 @@ pnpm dev
 pnpm dev:mp-weixin
 ```
 
-- web 平台： `pnpm build:h5`，打包后的文件在 `dist/build/h5`，可以放到 web 服务器，如 nginx 运行。如果最终不是放在根目录，可以在 `manifest.config.ts` 文件的 `h5.router.base` 属性进行修改。
-- weixin 平台：`pnpm build:mp-weixin`, 打包后的文件在 `dist/build/mp-weixin`，然后通过微信开发者工具导入，并点击右上角的“上传”按钮进行上传。
-- APP 平台：`pnpm build:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/build/app` 文件夹，选择发行 - APP 云打包。
+`pnpm dev` 之后在浏览器打开 `http://localhost:9000/`。
+
+> 更多模板请看官方文档[unibest](https://codercup.github.io/unibest-docs/)。
+
+### 第一次 `commit`
+
+```bash
+git add .
+git commit -m "feat: init project"
+```
+
+### `v3` 代码块
+
+在 `vue` 文件中，输入 `v3` 按 `tab` 即可快速生成页面模板，可以大大加快页面生成。
+
+> 原理：基于 `VSCode` 代码块生成。
 
 ## 📄 License
 
