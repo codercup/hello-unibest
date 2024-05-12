@@ -10,10 +10,9 @@
 <template>
   <view class="">
     iconfont
-    <svg class="icon" aria-hidden="true">
-      <!-- 如果修改了icon-前缀请相应替换，如我的 bap-icon- -->
-      <use xlink:href="#bap-icon-guanbi"></use>
-    </svg>
+    <i class="iconfont icon-package text-red"></i>
+    <i class="iconfont icon-chat text-red"></i>
+    <i class="iconfont icon-my text-red"></i>
   </view>
 </template>
 

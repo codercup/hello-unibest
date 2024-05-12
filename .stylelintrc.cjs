@@ -50,5 +50,6 @@ module.exports = {
     'comment-no-empty': null,
     'scss/comment-no-empty': null,
     'no-duplicate-selectors': null,
+    'font-family-no-missing-generic-family-keyword': null,
   },
 }
