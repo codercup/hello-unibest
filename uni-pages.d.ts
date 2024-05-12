@@ -20,6 +20,7 @@ interface NavigateToOptions {
        "/pages/demo/base/no-navbar" |
        "/pages/demo/base/pinia" |
        "/pages/demo/base/request" |
+       "/pages/demo/base/route-interceptor" |
        "/pages/demo/base/svg" |
        "/pages/demo/base/throughout" |
        "/pages/demo/base/uni-ui-icons" |

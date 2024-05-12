@@ -77,6 +77,9 @@ dependencies:
   wot-design-uni:
     specifier: ^1.2.13
     version: 1.2.14(vue@3.3.11)
+  z-paging:
+    specifier: ^2.7.8
+    version: 2.7.10
 
 devDependencies:
   '@commitlint/cli':
@@ -14178,3 +14181,8 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
+
+  /z-paging@2.7.10:
+    resolution: {integrity: sha512-d4JTFDDxT4CP8GxE8b//mE7YNa0e1SRVoHS3W6jm2gfA9286rSigKghVtTCRpLP8oq0MvQp7eLU0InwaMrEiMg==}
+    engines: {HBuilderX: ^3.0.7}
+    dev: false
