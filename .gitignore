@@ -25,15 +25,15 @@ dist
 # rollup-plugin-visualizer 生成的分析文件
 stats.html
 # unplugin-auto-import 生成的类型文件
-auto-import.d.ts
+# auto-import.d.ts
 # unplugin-vue-components 生成的类型文件
-components.d.ts
+# components.d.ts
 # vite-plugin-uni-pages 生成的类型文件
-uni-pages.d.ts
+# uni-pages.d.ts
 
 # 插件生成的文件
-src/pages.json
-src/manifest.json
+# src/pages.json
+# src/manifest.json
 
 # lock 文件还是不要了，我主要的版本写死就好了
 # github actions 需要这些文件，所以main分支需要留着
