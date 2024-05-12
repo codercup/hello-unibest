@@ -82,13 +82,12 @@
     "useAttrs": true,
     "useCssModule": true,
     "useCssVars": true,
+    "useNavbarWeixin": true,
     "useSlots": true,
+    "useUpload": true,
     "watch": true,
     "watchEffect": true,
     "watchPostEffect": true,
-    "watchSyncEffect": true,
-    "useNavbarWeixin": true,
-    "useRequest": true,
-    "useUpload": true
+    "watchSyncEffect": true
   }
 }
