@@ -1,5 +1,5 @@
 {
-  "name": "unibest-base",
+  "name": "unibest",
   "appid": "H5871D791",
   "description": "",
   "versionName": "1.0.0",
@@ -74,7 +74,7 @@
   "locale": "zh-Hans",
   "h5": {
     "router": {
-      "base": "/unibest/"
+      "base": "/hello-unibest/"
     }
   }
 }
