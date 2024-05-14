@@ -75,7 +75,7 @@
       "eslint --fix"
     ],
     "**/*.{vue,css,scss,html}": [
-      "stylelint --fix"
+      "stylelint --fix --allow-empty-input"
     ]
   },
   "resolutions": {
