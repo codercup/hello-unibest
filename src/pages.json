@@ -366,6 +366,14 @@
       }
     },
     {
+      "path": "pages/demo/page/sp-editor/index",
+      "type": "page",
+      "layout": "demo",
+      "style": {
+        "navigationBarTitleText": "富文本"
+      }
+    },
+    {
       "path": "pages/demo/page/z-paging/index",
       "type": "page",
       "layout": "default",
