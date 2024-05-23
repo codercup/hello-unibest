@@ -44,16 +44,18 @@
       </wd-popover>
     </view>
     <view class="mt-4">
-      <wd-button @click="showModal">点击显示弹窗</wd-button>
+      <wd-button @click="showModal">点击显示Modal</wd-button>
+      <wd-button @click="showToast">点击显示toast</wd-button>
     </view>
   </view>
 </template>
 
 <script lang="ts" setup>
-import { useQueue, useMessage } from 'wot-design-uni'
+import { useQueue, useMessage, useToast } from 'wot-design-uni'
 
 const { closeOutside } = useQueue()
 const message = useMessage()
+const toast = useToast()
 const show = ref<boolean>(false)
 function handleChange({ show }) {
   console.log(show)
@@ -62,6 +64,10 @@ function handleChange({ show }) {
 const showModal = () => {
   // 顺便测试 message 的使用
   message.show('显示隐藏切换')
+}
+const showToast = () => {
+  // 顺便测试 message 的使用
+  toast.success('菲鸽找工作')
 }
 const value = ref<boolean>(false)
 
