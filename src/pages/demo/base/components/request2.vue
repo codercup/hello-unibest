@@ -29,7 +29,7 @@
     <wd-button type="error" @click="reset" class="my-6" :disabled="!data1 || !data2">
       重置数据
     </wd-button>
-    <wd-button type="error" @click="getAllData" class="my-6" :disabled="!!data1 || !!data2">
+    <wd-button type="success" @click="getAllData" class="my-6" :disabled="!!data1 || !!data2">
       同时发送请求
     </wd-button>
   </view>
