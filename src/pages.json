@@ -168,6 +168,14 @@
       }
     },
     {
+      "path": "pages/demo/base/request2",
+      "type": "page",
+      "layout": "demo",
+      "style": {
+        "navigationBarTitleText": "请求(状态一体化)"
+      }
+    },
+    {
       "path": "pages/demo/base/route-interceptor",
       "type": "page",
       "needLogin": true,
