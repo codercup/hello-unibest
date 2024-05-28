@@ -43,42 +43,42 @@ const prizeList = [
   {
     id: 0,
     name: '双肩包',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/backpack.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/backpack.jpeg',
   },
   {
     id: 1,
     name: '积木',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/jimu.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/jimu.jpg',
   },
   {
     id: 2,
     name: '红包',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/red-envelope.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/red-envelope.jpg',
   },
   {
     id: 3,
     name: '茶具',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/tea-set.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/tea-set.jpg',
   },
   {
     id: 5,
     name: '可爱脸',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/tushetou.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/tushetou.jpg',
   },
   {
     id: 6,
     name: '挖掘机',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/wajueji.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/wajueji.jpg',
   },
   {
     id: 7,
     name: '无辜脸',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/xiaolian.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/xiaolian.jpg',
   },
   {
     id: 8,
     name: '烟灰缸',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/yanhuigang.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/yanhuigang.jpg',
   },
 ]
 const startBtn = {

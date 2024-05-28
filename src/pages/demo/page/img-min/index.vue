@@ -19,7 +19,7 @@ import testBgImg from './test-bg.png'
     </view>
     <!-- #ifdef MP -->
     <image
-      src="https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/img-min/bg-1.png"
+      src="https://oss.laf.run/ukw0y1-site/hello-unibest-images/imgmin-bg.png"
       mode="scaleToFill"
     />
     <!-- #endif -->
@@ -28,12 +28,12 @@ import testBgImg from './test-bg.png'
     <!-- #endif -->
     <view class="mb-4">对比图如下2图，如果看不清请看代码原图</view>
     <image
-      src="https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/img-min/before.png"
+      src="https://oss.laf.run/ukw0y1-site/hello-unibest-images/imgmin-before.png"
       mode="widthFix"
       class="w-full"
     />
     <image
-      src="https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/img-min/after.png"
+      src="https://oss.laf.run/ukw0y1-site/hello-unibest-images/imgmin-after.png"
       mode="widthFix"
       class="w-full"
     />

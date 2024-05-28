@@ -108,7 +108,7 @@ const onRefresherRefresh = async () => {
   padding: 40rpx 0;
   line-height: 2;
   color: #fff;
-  background-image: url('https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/top-bg.png');
+  background-image: url('https://oss.laf.run/ukw0y1-site/hello-unibest-images/top-bg.png');
   background-size: cover;
 }
 

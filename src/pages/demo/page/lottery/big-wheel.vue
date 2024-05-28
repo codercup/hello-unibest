@@ -27,7 +27,7 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
 // TODO: fix 微信小程序里面会报错
-// import targetImg from 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery/target.png'
+// import targetImg from 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/ui.png'
 
 let isLeaved = false
 // onBackPress(({ from }: { from: 'backbutton' | 'navigateBack' }) => {
@@ -45,42 +45,42 @@ const prizeList = [
   {
     id: 0,
     name: '双肩包',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/backpack.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/backpack.jpeg',
   },
   {
     id: 1,
     name: '积木',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/jimu.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/jimu.jpg',
   },
   {
     id: 2,
     name: '红包',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/red-envelope.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/red-envelope.jpg',
   },
   {
     id: 3,
     name: '茶具',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/tea-set.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/tea-set.jpg',
   },
   {
     id: 4,
     name: '可爱脸',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/tushetou.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/tushetou.jpg',
   },
   {
     id: 5,
     name: '挖掘机',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/wajueji.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/wajueji.jpg',
   },
   {
     id: 6,
     name: '无辜脸',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/xiaolian.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/xiaolian.jpg',
   },
   {
     id: 7,
     name: '烟灰缸',
-    pic: 'https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/yanhuigang.jpg',
+    pic: 'https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/prizes/yanhuigang.jpg',
   },
 ]
 let isRunning = false // 是否正在抽奖
@@ -217,7 +217,7 @@ const start = () => {
   height: 96px;
   margin: auto;
   cursor: pointer;
-  background: url('https://cip-shopping-page-0eysug01066a9e-1302818703.tcloudbaseapp.com/fly/lottery-prize/btn-enable.png')
+  background: url('https://oss.laf.run/ukw0y1-site/hello-unibest-images/lottery/btn-enable.png')
     no-repeat center / 100% 100%;
   transform: translate(-50%, -50%);
 }
