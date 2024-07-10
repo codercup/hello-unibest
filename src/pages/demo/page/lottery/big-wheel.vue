@@ -85,7 +85,7 @@ const prizeList = [
 ]
 let isRunning = false // 是否正在抽奖
 const baseRunAngle = 360 * 5 // 总共转动角度 至少5圈
-let prizeId = 0 // 中奖id
+const prizeId = ref(0) // 中奖id
 
 // 平均每个奖品角度
 const rotateAngle = computed(() => {
@@ -93,7 +93,7 @@ const rotateAngle = computed(() => {
   return _degree
 })
 // 要执行总角度数
-const totalRunAngle = ref(baseRunAngle - (prizeId + 0.5) * rotateAngle.value)
+const totalRunAngle = ref(baseRunAngle - (prizeId.value + 0.5) * rotateAngle.value)
 
 // 计算绘制转盘背景
 const bgColor = (() => {
@@ -123,14 +123,21 @@ const getRandomNum = () => {
   const num = Math.floor(Math.random() * prizeList.length)
   return num
 }
-
+// 假设3s后拿到结果
+const fetchDataFromServer = () => {
+  setTimeout(() => {
+    prizeId.value = Math.floor(Math.random() * prizeList.length)
+    totalRunAngle.value = baseRunAngle - (prizeId.value + 0.5) * rotateAngle.value
+    startRun2()
+  }, 3000)
+}
 const stopRun = () => {
   isRunning = false
   if (isLeaved) {
     console.log('已经离开页面了，不用显示弹窗')
     return
   }
-  const prizeName = prizeList.find((e) => e.id === prizeId)!.name
+  const prizeName = prizeList.find((e) => e.id === prizeId.value)!.name
   uni.showModal({
     title: `恭喜你中奖 ${prizeName}`,
     success() {
@@ -138,25 +145,31 @@ const stopRun = () => {
     },
   })
 }
-
 const startRun = () => {
   console.log(isRunning, totalRunAngle.value)
   // 设置动效
-  styleObj.value = `${bgColor} transform: rotate(${totalRunAngle.value}deg); transition: all 4s ease;`
+  styleObj.value = `${bgColor} transform: rotate(3600deg); transition: all 10s ease;`
+}
+const startRun2 = () => {
+  console.log(isRunning, totalRunAngle.value)
+  // 设置动效
+  styleObj.value = `${bgColor} transform: rotate(${3600 + totalRunAngle.value}deg); transition: all 3s ease;`
   setTimeout(stopRun, 4000)
 }
 const start = () => {
   if (!isRunning) {
     isRunning = true
+    startRun()
 
-    console.log('开始抽奖，后台请求中奖奖品')
-    // 请求返回的奖品编号 这里使用随机数
-    prizeId = getRandomNum()
-    totalRunAngle.value = baseRunAngle - (prizeId + 0.5) * rotateAngle.value
-    console.log('中奖ID>>>', prizeId, prizeList[prizeId], totalRunAngle.value)
-    nextTick(() => {
-      startRun()
-    })
+    fetchDataFromServer()
+    // console.log('开始抽奖，后台请求中奖奖品')
+    // // 请求返回的奖品编号 这里使用随机数
+    // prizeId.value = getRandomNum()
+    // totalRunAngle.value = baseRunAngle - (prizeId.value + 0.5) * rotateAngle.value
+    // console.log('中奖ID>>>', prizeId, prizeList[prizeId.value], totalRunAngle.value)
+    // nextTick(() => {
+    //   startRun()
+    // })
   }
 }
 </script>
